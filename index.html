@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Invitation Response</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #dbeafe, #d1c4e9);
+        }
+        .container {
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        h2 {
+            color: #007BFF;
+            font-size: 26px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px #aaa;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            text-align: left;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+        button {
+            background: linear-gradient(135deg, #4a90e2, #1e70bf);
+            color: white;
+            border: none;
+            padding: 12px 0;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        button:hover {
+            background: #366fa2;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .footer {
+            font-size: 14px;
+            color: #555;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .cta-message {
+            color: #777;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Accept Your VIP Invitation</h2>
+        <p>Please fill out the form below to accept your invitation to join the MyVpro affiliate program.</p>
+
+        <!-- Web Form -->
+        <form action="https://example.com/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="comments">Comments or Questions (optional):</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            <p>Questions? Contact us at <a href="mailto:josh@myvpro.com">josh@myvpro.com</a></p>
+        </div>
+
+        <!-- CTA Message -->
+        <div class="cta-message">
+            <p>Join us and unlock exclusive offers and benefits today!</p>
+        </div>
+    </div>
+</body>
+</html>
